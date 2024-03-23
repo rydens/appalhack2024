@@ -64,6 +64,12 @@ offset_top = 314.0
 offset_right = 217.0
 offset_bottom = 395.0
 
+[node name="home" type="Button" parent="."]
+offset_left = 792.0
+offset_top = 476.0
+offset_right = 905.0
+offset_bottom = 620.0
+
 [connection signal="pressed" from="cameraD" to="." method="_on_camera_d_pressed"]
 [connection signal="pressed" from="cameraF" to="." method="_on_camera_f_pressed"]
 [connection signal="pressed" from="cameraC" to="." method="_on_camera_c_pressed"]
@@ -71,3 +77,4 @@ offset_bottom = 395.0
 [connection signal="pressed" from="cameraA" to="." method="_on_camera_a_pressed"]
 [connection signal="pressed" from="cameraG" to="." method="_on_camera_g_pressed"]
 [connection signal="pressed" from="cameraE" to="." method="_on_camera_e_pressed"]
+[connection signal="pressed" from="home" to="." method="_on_home_pressed"]
