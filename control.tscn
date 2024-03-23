@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cc3q00bavpons"]
+[gd_scene load_steps=2 format=3 uid="uid://cc3q00bavpons"]
+
+[ext_resource type="Script" path="res://changeCamera.gd" id="1_q63ne"]
 
 [node name="introScreen" type="Control"]
 layout_mode = 3
@@ -27,3 +29,4 @@ offset_right = 0.159973
 offset_bottom = -0.144012
 size_flags_horizontal = 0
 text = "start"
+script = ExtResource("1_q63ne")
