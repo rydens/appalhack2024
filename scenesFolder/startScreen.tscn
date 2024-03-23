@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc3q00bavpons"]
+
+[ext_resource type="Script" path="res://scripts/changeCamera.gd" id="1_k25nb"]
+
+[node name="introScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+anchor_right = 0.42
+anchor_bottom = 0.403
+offset_left = 46.0
+offset_top = 81.0
+offset_right = 0.159973
+offset_bottom = -0.144012
+size_flags_horizontal = 0
+text = "start"
+script = ExtResource("1_k25nb")

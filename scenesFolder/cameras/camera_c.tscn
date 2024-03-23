@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://cydavhy1s3hc0"]
+
+[ext_resource type="Script" path="res://scripts/changeCamera.gd" id="1_cyoth"]
+[ext_resource type="Texture2D" uid="uid://dbcgstex4fk26" path="res://assets/cameraC.jpg" id="2_8rhmh"]
+[ext_resource type="Texture2D" uid="uid://c3tt0hrpp1wxj" path="res://assets/poki.png" id="3_cr8bm"]
+
+[node name="cameraC" type="Node2D"]
+position = Vector2(42, 23)
+script = ExtResource("1_cyoth")
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.042
+anchor_top = 0.109
+anchor_right = 0.743
+anchor_bottom = 1.016
+offset_left = 144.0
+offset_top = 111.0
+offset_right = 350.0
+offset_bottom = 222.0
+
+[node name="main camera" type="Sprite2D" parent="."]
+position = Vector2(534, 317)
+scale = Vector2(0.599252, 0.609902)
+texture = ExtResource("2_8rhmh")
+
+[node name="Poki" type="Sprite2D" parent="."]
+position = Vector2(249, 168)
+rotation = 0.120428
+scale = Vector2(0.155973, 0.118056)
+skew = -0.532325
+texture = ExtResource("3_cr8bm")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
