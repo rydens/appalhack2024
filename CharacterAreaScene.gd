@@ -22,6 +22,6 @@ func _process(delta):
 	else:
 		poki.visible = false
 	
-	
+		
 	
 	
