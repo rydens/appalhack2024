@@ -1,9 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cc3q00bavpons"]
+[gd_scene load_steps=3 format=3 uid="uid://cc3q00bavpons"]
 
 [ext_resource type="Script" path="res://introScreen.gd" id="1_lgqg3"]
 [ext_resource type="Script" path="res://StartButton.gd" id="2_d32vd"]
-[ext_resource type="Texture2D" uid="uid://1k2spxgotrsh" path="res://assets/appalhack2024title.png" id="3_nr8yf"]
-[ext_resource type="Texture2D" uid="uid://d285lkt7mjixk" path="res://assets/appalhack2024names.png" id="4_on140"]
 
 [node name="introScreen" type="Control"]
 layout_mode = 3
@@ -19,13 +17,9 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -19.0
-offset_top = -90.0
-offset_right = 29.0
-offset_bottom = 62.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.0862745, 0.505882, 0.215686, 1)
+color = Color(0.2, 0.2, 0.2, 1)
 
 [node name="StartButton" type="Button" parent="."]
 layout_mode = 2
@@ -37,25 +31,6 @@ offset_right = 291.16
 offset_bottom = 336.856
 size_flags_horizontal = 0
 text = "start"
-
-
 script = ExtResource("2_d32vd")
 
-[node name="Title" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 286.0
-offset_top = 20.0
-offset_right = 864.0
-offset_bottom = 105.0
-texture = ExtResource("3_nr8yf")
-
-[node name="Names" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 382.0
-offset_top = 147.0
-offset_right = 725.0
-offset_bottom = 373.0
-texture = ExtResource("4_on140")
-
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
-
