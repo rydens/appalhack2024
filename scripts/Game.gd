@@ -1,6 +1,7 @@
 extends Node2D
 
-signal time_step
+signal ti
++me_step
 
 var time = Timer.new()
 
@@ -8,8 +9,10 @@ var time = Timer.new()
 func _ready():
 	print("Game ready")
 	for i in range(60):
-		time.start(5)
+		while ( !timer.is_stopped):
+			foo = ""
 		time_step.emit()
+		time.start(5)
 	
 
 
