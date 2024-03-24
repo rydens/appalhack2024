@@ -55,3 +55,4 @@ Name = "NULLENEMY"
 position = Vector2(179, 522)
 
 [connection signal="PokiKill" from="PokiEnemy" to="player" method="_on_poki_enemy_poki_kill"]
+[connection signal="SwansonKill" from="SwansonEnemy" to="player" method="_on_swanson_enemy_swanson_kill"]
