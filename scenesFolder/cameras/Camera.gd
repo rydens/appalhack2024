@@ -16,12 +16,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	onTimeStep()
 
 
 func _on_show_cameras_pressed():
 	get_parent().get_parent().get_node("cameraInterface/Camera2D").make_current()
 
 func onTimeStep():
-	for location in VisibleLocations:
-		location.Occupant.position = location.position
+	for location in VisibleLocations: #setting visibile locations we 
+		location.Occupant.get_node("Sprite2D").position = location.global_position
+		print(str(location.Occupant.get_node("Sprite2D").position))
+
