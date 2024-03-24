@@ -91,7 +91,7 @@ func _incorrect():
 	#also call to swanson node to make him move
 
 func _on_lobby_return_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/lobbyScene.tscn")
+	get_tree().change_scene_to_file("res://scenesFolder/game.tscn")
 
 
 func _on_homework_1_answers_item_clicked(index, at_position, mouse_button_index):
