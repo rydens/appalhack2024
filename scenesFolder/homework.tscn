@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://ce817ntl1favu"]
 
-[ext_resource type="Script" path="res://scenesFolder/homework.gd" id="1_5fsuq"]
+[ext_resource type="Script" path="res://scripts/homework.gd" id="1_5fsuq"]
 [ext_resource type="Texture2D" uid="uid://svlw0rga27er" path="res://assets/Homework.png" id="1_v46t8"]
 [ext_resource type="Texture2D" uid="uid://cgssaen46fxfk" path="res://assets/Question1.png" id="3_k6o6w"]
 
