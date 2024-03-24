@@ -20,3 +20,8 @@ func _on_show_homework_pressed():
 
 func _on_poki_enemy_poki_kill():
 	get_tree().change_scene_to_file("res://scenesFolder/startScreen.tscn")
+
+
+
+func _on_swanson_enemy_swanson_kill():
+	get_tree().change_scene_to_file("res://scenesFolder/startScreen.tscn")
