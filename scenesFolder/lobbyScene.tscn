@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://mxt3p4alh0yd"]
+[gd_scene load_steps=6 format=3 uid="uid://mxt3p4alh0yd"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_p7v2c"]
 [ext_resource type="Texture2D" uid="uid://qw1whvsnwmro" path="res://assets/cameraLobby.jpg" id="2_qr8ti"]
+[ext_resource type="Script" path="res://scenesFolder/closeDoorLeft.gd" id="3_bt0i2"]
+[ext_resource type="Script" path="res://scenesFolder/closeDoorRight.gd" id="3_isrbq"]
 [ext_resource type="Script" path="res://scenesFolder/LobbyPlayerCamera.gd" id="3_n6dyc"]
 
 [node name="player" type="Node2D"]
@@ -9,6 +11,22 @@ script = ExtResource("1_p7v2c")
 
 [node name="LobbyScene" type="Sprite2D" parent="."]
 texture = ExtResource("2_qr8ti")
+
+[node name="closeDoorLeft" type="Button" parent="LobbyScene"]
+offset_left = -1400.0
+offset_top = -172.0
+offset_right = -1282.0
+offset_bottom = 12.0
+text = "close door left"
+script = ExtResource("3_bt0i2")
+
+[node name="closeDoorRight" type="Button" parent="LobbyScene"]
+offset_left = 918.0
+offset_top = -191.0
+offset_right = 1086.0
+offset_bottom = 24.0
+text = "close door right"
+script = ExtResource("3_isrbq")
 
 [node name="LobbyPlayerCamera" type="Camera2D" parent="LobbyScene"]
 zoom = Vector2(1, 0.75)
@@ -25,10 +43,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -415.0
+offset_left = -1611.0
 offset_top = 300.0
-offset_right = 415.0
-offset_bottom = 420.0
+offset_right = 1601.0
+offset_bottom = 442.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "camera"
@@ -40,5 +58,7 @@ offset_right = 417.0
 offset_bottom = -292.0
 text = "Homework"
 
+[connection signal="pressed" from="LobbyScene/closeDoorLeft" to="LobbyScene/closeDoorLeft" method="_on_pressed"]
+[connection signal="pressed" from="LobbyScene/closeDoorRight" to="LobbyScene/closeDoorRight" method="_on_pressed"]
 [connection signal="pressed" from="LobbyScene/LobbyPlayerCamera/showCameras" to="." method="_on_show_cameras_pressed"]
 [connection signal="pressed" from="LobbyScene/LobbyPlayerCamera/showHomework" to="." method="_on_show_homework_pressed"]
