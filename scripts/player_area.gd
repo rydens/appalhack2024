@@ -24,7 +24,6 @@ func _ready():
 	#location_list["Norris"] = "Norris' office"
 	#location_list["Swanson"] = "Swanson's office"
 	#location_list["Poki"] = scene_list["c"]
-	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -41,8 +40,23 @@ func _update_locations():
 			_do_nothing()
 			
 func _move_time_forward():
-	
+	for character in travel_positions.keys:
+		travel_positions[character] = \
+			(travel_positions[character] + 1) % travels[character].length
+	_update_locations()
+	var win = _check_win()
+	var loss = _check_loss()
 	pass
 			
 func _do_nothing():
 	pass
+
+func _check_win():
+	pass
+	
+func _check_loss():
+	pass
+	
+	
+	
+	
