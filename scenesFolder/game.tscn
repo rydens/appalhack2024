@@ -33,7 +33,7 @@ StartLocationPath = NodePath("Cameras/CameraG/SwansonOffice_1")
 [node name="FenwickEnemy" type="Node2D" parent="."]
 script = ExtResource("3_cirrp")
 Name = "Fenwick"
-LocationPaths = Array[NodePath]([NodePath("Cameras/CameraD/FenwickHallway_1"), NodePath("Cameras/CameraB/FenwickHallway_2"), NodePath("Cameras/CameraD/FenwickHallway_3"), NodePath("Cameras/CameraB/FenwickHallway_4"), NodePath("Cameras/CameraE/FenwickHallway_5"), NodePath("Cameras/CameraB/FenwickHallway_6"), NodePath("Cameras/CameraE/FenwickHallway_7"), NodePath("Cameras/CameraE/FenwickHallway_8"), NodePath("Cameras/CameraF/FenwickHallway_8_2"), NodePath("Cameras/CameraA/FenwickHallway_9"), NodePath("Cameras/CameraF/FenwickHallway_10"), NodePath("Cameras/CameraA/FenwickDoorR_11")])
+LocationPaths = Array[NodePath]([NodePath("Cameras/CameraF/FenwickHallway_10"), NodePath("Cameras/CameraE/FenwickHallway_8"), NodePath("Cameras/CameraF/FenwickHallway_8_2"), NodePath("Cameras/CameraE/FenwickHallway_7"), NodePath("Cameras/CameraE/FenwickHallway_5"), NodePath("Cameras/CameraD/FenwickHallway_3"), NodePath("Cameras/CameraD/FenwickHallway_1"), NodePath("Cameras/CameraB/FenwickHallway_4"), NodePath("Cameras/CameraB/FenwickHallway_2"), NodePath("Cameras/CameraB/FenwickHallway_6"), NodePath("Cameras/CameraA/FenwickHallway_9"), NodePath("Cameras/CameraA/FenwickDoorR_11")])
 StartLocationPath = NodePath("Cameras/CameraD/FenwickHallway_1")
 
 [node name="NorrisEnemy" type="Node2D" parent="."]
@@ -49,3 +49,4 @@ position = Vector2(179, 522)
 
 [connection signal="PokiKill" from="PokiEnemy" to="player" method="_on_poki_enemy_poki_kill"]
 [connection signal="SwansonKill" from="SwansonEnemy" to="player" method="_on_swanson_enemy_swanson_kill"]
+[connection signal="FenwickKill" from="FenwickEnemy" to="player" method="_on_fenwick_enemy_fenwick_kill"]
