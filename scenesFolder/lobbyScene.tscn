@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsfenq8b6squp"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_p7v2c"]
+[ext_resource type="Texture2D" uid="uid://qw1whvsnwmro" path="res://assets/cameraLobby.jpg" id="2_qr8ti"]
+
+[node name="player" type="Node2D"]
+script = ExtResource("1_p7v2c")
+
+[node name="CameraLobby" type="Sprite2D" parent="."]
+position = Vector2(517, 322.125)
+scale = Vector2(0.729632, 0.729632)
+texture = ExtResource("2_qr8ti")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+
+[node name="showCameras" type="Button" parent="."]
+offset_left = 145.0
+offset_top = 506.0
+offset_right = 981.0
+offset_bottom = 656.0
+text = "camera"
+
+[connection signal="pressed" from="showCameras" to="." method="_on_show_cameras_pressed"]
