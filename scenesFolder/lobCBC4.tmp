@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://b2csoojx5vuia"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_p7v2c"]
-[ext_resource type="Texture2D" uid="uid://b1rft2jvmsi20" path="res://assets/cameraLobbyDark.jpg" id="2_a62ff"]
+[ext_resource type="Texture2D" uid="uid://c6f5qkcqekga4" path="res://assets/cameraLobby.jpg" id="2_qr8ti"]
 [ext_resource type="Script" path="res://scenesFolder/LobbyPlayerCamera.gd" id="3_n6dyc"]
 [ext_resource type="Texture2D" uid="uid://djc5xhdncrwkx" path="res://assets/cameraLobbyLeftLight.jpg" id="4_cfe64"]
 [ext_resource type="Texture2D" uid="uid://26iibslovlqe" path="res://assets/cameraLobbyRightLight.jpg" id="5_0am5u"]
@@ -10,7 +10,7 @@
 script = ExtResource("1_p7v2c")
 
 [node name="LobbyScene" type="Sprite2D" parent="."]
-texture = ExtResource("2_a62ff")
+texture = ExtResource("2_qr8ti")
 
 [node name="LobbyPlayerCamera" type="Camera2D" parent="LobbyScene"]
 zoom = Vector2(1, 0.75)
@@ -36,27 +36,9 @@ grow_vertical = 2
 text = "camera"
 
 [node name="leftLight" type="Sprite2D" parent="LobbyScene"]
-visible = false
 texture = ExtResource("4_cfe64")
 
 [node name="rightLight" type="Sprite2D" parent="LobbyScene"]
-visible = false
 texture = ExtResource("5_0am5u")
-
-[node name="leftLightSwitch" type="Button" parent="LobbyScene"]
-offset_left = -947.0
-offset_top = -133.0
-offset_right = -870.0
-offset_bottom = -66.0
-tooltip_text = "Left Light Switch
-"
-text = "Left Light Switch"
-
-[node name="rightLightSwitch" type="Button" parent="LobbyScene"]
-offset_left = 980.0
-offset_top = 40.0
-offset_right = 1119.0
-offset_bottom = 116.0
-text = "Right Light Switch"
 
 [connection signal="pressed" from="LobbyScene/LobbyPlayerCamera/showCameras" to="." method="_on_show_cameras_pressed"]
