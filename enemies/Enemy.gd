@@ -5,8 +5,8 @@ class_name Enemy extends Node2D
 @export var StartLocationPath: NodePath
 @export var ChanceToMove: float
 
-@onready var Locations: Array[Location] = loadLocationNodes(LocationPaths)
-@onready var CurrentLocation = get_node(StartLocationPath)
+#@onready var Locations: Array[Location] = loadLocationNodes(LocationPaths)
+#@onready var CurrentLocation = get_node(StartLocationPath)
 
 
 func loadLocationNodes(nodePaths: Array[NodePath]) -> Array[Location]:

@@ -6,31 +6,31 @@ func _ready():
 	pass # Replace with function body.
 	
 func _on_camera_a_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/cameras/camera_a.tscn")
+	get_parent().get_node("Cameras/CameraA/Camera2D").make_current()
 
 
 func _on_camera_b_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/cameras/camera_b.tscn")
+	get_parent().get_node("Cameras/CameraB/Camera2D").make_current()
 
 
 func _on_camera_c_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/cameras/camera_c.tscn")
+	get_parent().get_node("Cameras/CameraC/Camera2D").make_current()
 
 
 func _on_camera_d_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/cameras/camera_d.tscn")
+	get_parent().get_node("Cameras/CameraD/Camera2D").make_current()
 
 
 func _on_camera_e_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/cameras/camera_e.tscn")
+	get_parent().get_node("Cameras/CameraE/Camera2D").make_current()
 
 
 func _on_camera_f_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/cameras/camera_f.tscn")
+	get_parent().get_node("Cameras/CameraF/Camera2D").make_current()
 
 
 func _on_camera_g_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/cameras/camera_g.tscn")
+	get_parent().get_node("Cameras/CameraG/Camera2D").make_current()
 
 func _on_home_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/lobbyScene.tscn")
+	get_parent().get_node("player/LobbyScene/LobbyPlayerCamera").make_current()

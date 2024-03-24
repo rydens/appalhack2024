@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://xpiq18sdcw3r"]
+[gd_scene load_steps=10 format=3 uid="uid://xpiq18sdcw3r"]
 
 [ext_resource type="Script" path="res://enemies/PokiEnemy.gd" id="1_l1kos"]
+[ext_resource type="Script" path="res://scripts/Game.gd" id="1_lik7u"]
 [ext_resource type="Script" path="res://enemies/FenwickEnemy.gd" id="3_cirrp"]
 [ext_resource type="Script" path="res://enemies/SwansonEnemy.gd" id="3_ounw8"]
 [ext_resource type="Script" path="res://enemies/NorrisEnemy.gd" id="4_yhba5"]
@@ -10,10 +11,12 @@
 [ext_resource type="PackedScene" uid="uid://ctvvtjcw4bss1" path="res://scenesFolder/camera_interface.tscn" id="8_r5dhf"]
 
 [node name="Game" type="Node2D"]
-
-[node name="Cameras" parent="." instance=ExtResource("7_c4k0s")]
+script = ExtResource("1_lik7u")
 
 [node name="player" parent="." instance=ExtResource("6_rk86f")]
+
+[node name="Cameras" parent="." instance=ExtResource("7_c4k0s")]
+position = Vector2(-1895, 935)
 
 [node name="PokiEnemy" type="Node2D" parent="."]
 script = ExtResource("1_l1kos")
@@ -42,3 +45,4 @@ script = ExtResource("5_465va")
 Name = "NULLENEMY"
 
 [node name="cameraInterface" parent="." instance=ExtResource("8_r5dhf")]
+position = Vector2(179, 522)

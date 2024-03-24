@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://bp8gnpvkxfm0w"]
+[gd_scene load_steps=9 format=3 uid="uid://bp8gnpvkxfm0w"]
 
 [ext_resource type="PackedScene" uid="uid://cco7q756aqe7c" path="res://scenesFolder/cameras/camera_a.tscn" id="1_pwqmf"]
 [ext_resource type="PackedScene" uid="uid://b0s3jd342ytqq" path="res://scenesFolder/cameras/camera_b.tscn" id="2_0w6yt"]
 [ext_resource type="PackedScene" uid="uid://cydavhy1s3hc0" path="res://scenesFolder/cameras/camera_c.tscn" id="3_ac5bs"]
 [ext_resource type="PackedScene" uid="uid://bceiv3bgoc2x" path="res://scenesFolder/cameras/camera_d.tscn" id="4_ctiy6"]
+[ext_resource type="Script" path="res://scenesFolder/cameras/camera_c.gd" id="4_xybvl"]
 [ext_resource type="PackedScene" uid="uid://cvgpgx27oqt3r" path="res://scenesFolder/cameras/camera_e.tscn" id="5_iktlg"]
 [ext_resource type="PackedScene" uid="uid://cw0wsd883aex7" path="res://scenesFolder/cameras/camera_f.tscn" id="6_wni6u"]
 [ext_resource type="PackedScene" uid="uid://ekrvkam7gp7p" path="res://scenesFolder/cameras/camera_g.tscn" id="7_ki3da"]
@@ -11,15 +12,44 @@
 [node name="Cameras" type="Node2D"]
 
 [node name="CameraA" parent="." instance=ExtResource("1_pwqmf")]
+position = Vector2(20, 8)
+
+[node name="Camera2D" type="Camera2D" parent="CameraA"]
+position = Vector2(688, 330)
 
 [node name="CameraB" parent="." instance=ExtResource("2_0w6yt")]
+position = Vector2(40, 700)
 
-[node name="cameraC" parent="." instance=ExtResource("3_ac5bs")]
+[node name="Camera2D" type="Camera2D" parent="CameraB"]
+position = Vector2(584, 339)
+
+[node name="CameraC" parent="." instance=ExtResource("3_ac5bs")]
+position = Vector2(68, 1437)
+script = ExtResource("4_xybvl")
+
+[node name="Camera2D" type="Camera2D" parent="CameraC"]
+position = Vector2(533, 321)
 
 [node name="CameraD" parent="." instance=ExtResource("4_ctiy6")]
+position = Vector2(36, 2142)
+
+[node name="Camera2D" type="Camera2D" parent="CameraD"]
+position = Vector2(586, 330)
 
 [node name="CameraE" parent="." instance=ExtResource("5_iktlg")]
+position = Vector2(108, 2872)
+
+[node name="Camera2D" type="Camera2D" parent="CameraE"]
+position = Vector2(556, 326)
 
 [node name="CameraF" parent="." instance=ExtResource("6_wni6u")]
+position = Vector2(36, 4046)
+
+[node name="Camera2D" type="Camera2D" parent="CameraF"]
+position = Vector2(573, 333)
 
 [node name="CameraG" parent="." instance=ExtResource("7_ki3da")]
+position = Vector2(74, 5276)
+
+[node name="Camera2D" type="Camera2D" parent="CameraG"]
+position = Vector2(596, 355)

@@ -11,4 +11,4 @@ func _process(delta):
 	pass
 
 func _on_show_cameras_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/camera_interface.tscn")
+	get_parent().get_node("cameraInterface/Camera2D").make_current()
