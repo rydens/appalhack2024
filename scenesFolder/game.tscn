@@ -46,3 +46,8 @@ Name = "NULLENEMY"
 
 [node name="cameraInterface" parent="." instance=ExtResource("8_r5dhf")]
 position = Vector2(179, 522)
+
+[connection signal="time_step" from="." to="PokiEnemy" method="_on_game_time_step"]
+[connection signal="time_step" from="." to="SwansonEnemy" method="_on_game_time_step"]
+[connection signal="time_step" from="." to="FenwickEnemy" method="_on_game_time_step"]
+[connection signal="time_step" from="." to="NorrisEnemy" method="_on_game_time_step"]

@@ -13,3 +13,7 @@ func _process(_delta):
 
 func move():
 	pass
+
+
+func _on_game_time_step():
+	pass # Replace with function body.
