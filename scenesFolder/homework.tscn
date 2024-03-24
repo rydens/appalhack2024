@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=3 uid="uid://ce817ntl1favu"]
+
+[ext_resource type="Script" path="res://scenesFolder/homework.gd" id="1_5fsuq"]
+[ext_resource type="Texture2D" uid="uid://svlw0rga27er" path="res://assets/Homework.png" id="1_v46t8"]
+[ext_resource type="Texture2D" uid="uid://cgssaen46fxfk" path="res://assets/Question1.png" id="3_k6o6w"]
+
+[node name="Homework" type="Node2D"]
+position = Vector2(577, 351)
+script = ExtResource("1_5fsuq")
+
+[node name="HomeworkPage" type="Sprite2D" parent="."]
+position = Vector2(-8.5, -25.25)
+scale = Vector2(1.65211, 1.08431)
+texture = ExtResource("1_v46t8")
+
+[node name="LobbyReturn" type="Button" parent="."]
+offset_left = -137.0
+offset_top = -341.0
+offset_right = 141.0
+offset_bottom = -245.0
+text = "Return"
+metadata/_edit_use_anchors_ = true
+
+[node name="HomeworkQ" type="Sprite2D" parent="."]
+position = Vector2(0, -27)
+texture = ExtResource("3_k6o6w")
+
+[node name="HomeworkAnswers" type="ItemList" parent="."]
+offset_left = -284.0
+offset_top = 17.0
+offset_right = 238.0
+offset_bottom = 164.0
+item_count = 5
+item_0/text = "A. 34"
+item_1/text = "B. 18"
+item_2/text = "C. 2"
+item_3/text = "D. 7"
+item_4/text = "E. All/None"
+
+[connection signal="pressed" from="LobbyReturn" to="." method="_on_lobby_return_pressed"]
+[connection signal="item_clicked" from="HomeworkAnswers" to="." method="_on_homework_1_answers_item_clicked"]

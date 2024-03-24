@@ -21,4 +21,13 @@ offset_right = 981.0
 offset_bottom = 656.0
 text = "camera"
 
+[node name="showHomework" type="Button" parent="."]
+offset_left = 156.0
+offset_top = 8.0
+offset_right = 988.0
+offset_bottom = 180.0
+text = "Homework
+"
+
 [connection signal="pressed" from="showCameras" to="." method="_on_show_cameras_pressed"]
+[connection signal="pressed" from="showHomework" to="." method="_on_show_homework_pressed"]

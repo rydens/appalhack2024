@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://CharacterAreaScene.gd" id="1_cvh6c"]
 [ext_resource type="Texture2D" uid="uid://dno5xmjtcakdh" path="res://assets/Background_brick_wall.jpg" id="3_quvlv"]
-[ext_resource type="Texture2D" uid="uid://c270v55mqdff7" path="res://icon.svg" id="4_ost01"]
+[ext_resource type="Texture2D" uid="uid://c270v55mqdff7" path="res://assets/icon.svg" id="4_ost01"]
 [ext_resource type="Texture2D" uid="uid://c3tt0hrpp1wxj" path="res://assets/poki.png" id="5_c8h8k"]
 [ext_resource type="Script" path="res://scripts/Poki.gd" id="5_sb0id"]
 

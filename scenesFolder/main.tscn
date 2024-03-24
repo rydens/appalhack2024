@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://c8wy335h6m7ys"]
+[gd_scene load_steps=6 format=3 uid="uid://c8wy335h6m7ys"]
 
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_1u7og"]
 [ext_resource type="PackedScene" uid="uid://ch05bumjq1abl" path="res://scripts/enemy.tscn" id="1_igfhw"]
 [ext_resource type="PackedScene" uid="uid://cc3q00bavpons" path="res://scenesFolder/startScreen.tscn" id="2_ikyqj"]
-[ext_resource type="PackedScene" uid="uid://xpiq18sdcw3r" path="res://scenesFolder/game.tscn" id="3_i85qu"]
+[ext_resource type="PackedScene" uid="uid://xpiq18sdcw3r" path="res://scenesFolder/Game.tscn" id="3_i85qu"]
+[ext_resource type="PackedScene" uid="uid://dsfenq8b6squp" path="res://scenesFolder/lobbyScene.tscn" id="4_2fg11"]
 
 [node name="Main" type="Node"]
+script = ExtResource("1_1u7og")
 
 [node name="Enemy" parent="." instance=ExtResource("1_igfhw")]
 
@@ -19,5 +22,7 @@ wait_time = 30.0
 [node name="introScreen" parent="." instance=ExtResource("2_ikyqj")]
 
 [node name="Game" parent="." instance=ExtResource("3_i85qu")]
+
+[node name="player" parent="." instance=ExtResource("4_2fg11")]
 
 [connection signal="pressed" from="Button" to="Enemy" method="_on_button_pressed"]
