@@ -88,6 +88,8 @@ func _question():
 
 func _incorrect():
 	Global.incorrect += 1
+	if (Global.incorrect >= 3):
+		get_tree().change_scene_to_file("res://scenesFolder/lose_screen.tscn")
 	#also call to swanson node to make him move
 
 func _on_lobby_return_pressed():
