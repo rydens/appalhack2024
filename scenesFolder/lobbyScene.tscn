@@ -32,3 +32,5 @@ offset_bottom = 420.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "camera"
+
+[connection signal="pressed" from="LobbyScene/LobbyPlayerCamera/showCameras" to="." method="_on_show_cameras_pressed"]
