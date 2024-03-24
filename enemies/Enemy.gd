@@ -7,6 +7,7 @@ class_name Enemy extends Node2D
 
 @onready var Locations: Array[Location] = loadLocationNodes(LocationPaths)
 @onready var CurrentLocation = get_parent().get_node(StartLocationPath)
+@onready var CurrentLocationIndex = Locations.find(CurrentLocation)
 
 
 func loadLocationNodes(nodePaths: Array[NodePath]) -> Array[Location]:
