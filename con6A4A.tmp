@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://cc3q00bavpons"]
+
+[ext_resource type="Script" path="res://introScreen.gd" id="1_lgqg3"]
+[ext_resource type="Script" path="res://StartButton.gd" id="2_d32vd"]
+
+[node name="introScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lgqg3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 2
+anchor_right = 0.42
+anchor_bottom = 0.403
+offset_left = 337.0
+offset_top = 418.0
+offset_right = 291.16
+offset_bottom = 336.856
+size_flags_horizontal = 0
+text = "start"
+script = ExtResource("2_d32vd")
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
