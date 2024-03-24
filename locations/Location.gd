@@ -1,5 +1,7 @@
-extends Node2D
+class_name Location extends Node2D
 
+@export var Occupant: Enemy
+@export var Pos: Vector2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -7,8 +9,5 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
-
-func _on_show_cameras_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/camera_interface.tscn")

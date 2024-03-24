@@ -27,6 +27,7 @@ offset_left = 90.0
 offset_top = 39.0
 offset_right = 188.0
 offset_bottom = 122.0
+metadata/_edit_use_anchors_ = true
 
 [node name="cameraF" type="Button" parent="."]
 offset_left = 496.0
@@ -57,6 +58,7 @@ offset_left = 415.0
 offset_top = 142.0
 offset_right = 493.0
 offset_bottom = 244.0
+metadata/_edit_use_anchors_ = true
 
 [node name="cameraE" type="Button" parent="."]
 offset_left = 92.0
@@ -69,6 +71,9 @@ offset_left = 792.0
 offset_top = 476.0
 offset_right = 905.0
 offset_bottom = 620.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(566, 334)
 
 [connection signal="pressed" from="cameraD" to="." method="_on_camera_d_pressed"]
 [connection signal="pressed" from="cameraF" to="." method="_on_camera_f_pressed"]

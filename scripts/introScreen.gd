@@ -6,10 +6,10 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	pass
 
 
 func _on_start_button_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/lobbyScene.tscn")
+	get_tree().change_scene_to_file("res://scenesFolder/game.tscn")
 

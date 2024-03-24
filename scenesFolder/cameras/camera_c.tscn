@@ -1,12 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://cydavhy1s3hc0"]
 
-[ext_resource type="Script" path="res://scripts/changeCamera.gd" id="1_cyoth"]
+[ext_resource type="Script" path="res://scenesFolder/cameras/Camera.gd" id="1_dac16"]
 [ext_resource type="Texture2D" uid="uid://cu27x804m1ctm" path="res://assets/cameraC.png" id="2_c1dy4"]
+[ext_resource type="PackedScene" uid="uid://c2n5xc3e564ts" path="res://locations/location.tscn" id="3_ae1gu"]
 [ext_resource type="Texture2D" uid="uid://dd7oepqvjy87g" path="res://assets/cameraarrow.png" id="3_q0j6p"]
 
 [node name="cameraC" type="Node2D"]
 position = Vector2(42, 23)
-script = ExtResource("1_cyoth")
+script = ExtResource("1_dac16")
 
 [node name="main camera" type="Sprite2D" parent="."]
 position = Vector2(534, 317)
@@ -21,5 +22,8 @@ offset_bottom = 628.0
 text = "camera"
 icon = ExtResource("3_q0j6p")
 icon_alignment = 1
+
+[node name="Poki311_2" parent="." instance=ExtResource("3_ae1gu")]
+position = Vector2(538, 323)
 
 [connection signal="pressed" from="showCameras" to="." method="_on_show_cameras_pressed"]

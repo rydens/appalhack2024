@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://mxt3p4alh0yd"]
+[gd_scene load_steps=5 format=3 uid="uid://dsfenq8b6squp"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_p7v2c"]
 [ext_resource type="Texture2D" uid="uid://qw1whvsnwmro" path="res://assets/cameraLobby.jpg" id="2_qr8ti"]
 [ext_resource type="Script" path="res://scenesFolder/closeDoorLeft.gd" id="3_bt0i2"]
 [ext_resource type="Script" path="res://scenesFolder/closeDoorRight.gd" id="3_isrbq"]
 [ext_resource type="Script" path="res://scenesFolder/LobbyPlayerCamera.gd" id="3_n6dyc"]
+[ext_resource type="PackedScene" uid="uid://c2n5xc3e564ts" path="res://locations/location.tscn" id="4_id7gb"]
 [ext_resource type="Texture2D" uid="uid://dd7oepqvjy87g" path="res://assets/cameraarrow.png" id="6_yfle4"]
 
 [node name="player" type="Node2D"]
@@ -60,6 +61,12 @@ offset_top = -460.0
 offset_right = 1616.0
 offset_bottom = -313.0
 text = "Homework"
+
+[node name="PokiLobby_5" parent="LobbyScene" instance=ExtResource("4_id7gb")]
+position = Vector2(-547, -21)
+
+[node name="SwansonDoorL_4" parent="LobbyScene" instance=ExtResource("4_id7gb")]
+position = Vector2(-1214, 41)
 
 [connection signal="pressed" from="LobbyScene/closeDoorLeft" to="LobbyScene/closeDoorLeft" method="_on_pressed"]
 [connection signal="pressed" from="LobbyScene/closeDoorRight" to="LobbyScene/closeDoorRight" method="_on_pressed"]
