@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b0s3jd342ytqq"]
+[gd_scene load_steps=4 format=3 uid="uid://b0s3jd342ytqq"]
 
 [ext_resource type="Script" path="res://scenesFolder/cameras/camera_b.gd" id="1_2qc4b"]
 [ext_resource type="Texture2D" uid="uid://blh4nckhx3qct" path="res://assets/cameraB.jpg" id="2_f87sl"]
+[ext_resource type="Texture2D" uid="uid://dd7oepqvjy87g" path="res://assets/cameraarrow.png" id="3_5fncb"]
 
 [node name="CameraB" type="Node2D"]
 script = ExtResource("1_2qc4b")
@@ -12,10 +13,12 @@ scale = Vector2(0.399276, 0.399276)
 texture = ExtResource("2_f87sl")
 
 [node name="showCameras" type="Button" parent="."]
-offset_left = 145.0
-offset_top = 591.0
-offset_right = 1016.0
-offset_bottom = 656.0
+offset_left = -48.0
+offset_top = 542.0
+offset_right = 1214.0
+offset_bottom = 650.0
 text = "camera"
+icon = ExtResource("3_5fncb")
+icon_alignment = 1
 
 [connection signal="pressed" from="showCameras" to="." method="_on_show_cameras_pressed"]

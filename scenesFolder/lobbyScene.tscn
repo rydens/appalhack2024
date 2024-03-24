@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://mxt3p4alh0yd"]
+[gd_scene load_steps=7 format=3 uid="uid://mxt3p4alh0yd"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_p7v2c"]
 [ext_resource type="Texture2D" uid="uid://qw1whvsnwmro" path="res://assets/cameraLobby.jpg" id="2_qr8ti"]
 [ext_resource type="Script" path="res://scenesFolder/closeDoorLeft.gd" id="3_bt0i2"]
 [ext_resource type="Script" path="res://scenesFolder/closeDoorRight.gd" id="3_isrbq"]
 [ext_resource type="Script" path="res://scenesFolder/LobbyPlayerCamera.gd" id="3_n6dyc"]
+[ext_resource type="Texture2D" uid="uid://dd7oepqvjy87g" path="res://assets/cameraarrow.png" id="6_yfle4"]
 
 [node name="player" type="Node2D"]
 script = ExtResource("1_p7v2c")
@@ -50,12 +51,14 @@ offset_bottom = 442.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "camera"
+icon = ExtResource("6_yfle4")
+icon_alignment = 1
 
 [node name="showHomework" type="Button" parent="LobbyScene/LobbyPlayerCamera"]
-offset_left = -415.0
-offset_top = -407.0
-offset_right = 417.0
-offset_bottom = -292.0
+offset_left = -1619.0
+offset_top = -460.0
+offset_right = 1616.0
+offset_bottom = -313.0
 text = "Homework"
 
 [connection signal="pressed" from="LobbyScene/closeDoorLeft" to="LobbyScene/closeDoorLeft" method="_on_pressed"]
