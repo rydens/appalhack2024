@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ch05bumjq1abl"]
 
 [ext_resource type="Texture2D" uid="uid://c3tt0hrpp1wxj" path="res://assets/poki.png" id="1_nybjm"]
-[ext_resource type="Script" path="res://enemy.gd" id="1_o2pl0"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_o2pl0"]
 [ext_resource type="Texture2D" uid="uid://bdxawmh11qjrg" path="res://assets/swanson.png" id="2_fbhp5"]
 
 [node name="Enemy" type="Node2D"]
