@@ -12,3 +12,7 @@ func _process(_delta):
 
 func _on_show_cameras_pressed():
 	get_parent().get_node("cameraInterface/Camera2D").make_current()
+
+func _on_show_homework_pressed():
+	get_tree().change_scene_to_file("res://scenesFolder/homework.tscn")
+

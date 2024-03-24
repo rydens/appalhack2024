@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://scenesFolder/cameras/Camera.gd" id="1_64w36"]
 [ext_resource type="Texture2D" uid="uid://jo0smq55bn8f" path="res://assets/cameraD.jpg" id="2_0706b"]
 [ext_resource type="PackedScene" uid="uid://c2n5xc3e564ts" path="res://locations/location.tscn" id="3_eighk"]
+[ext_resource type="Texture2D" uid="uid://dd7oepqvjy87g" path="res://assets/cameraarrow.png" id="3_ev6td"]
 
 [node name="CameraD" type="Node2D"]
 script = ExtResource("1_64w36")
@@ -13,11 +14,13 @@ scale = Vector2(0.418933, 0.397209)
 texture = ExtResource("2_0706b")
 
 [node name="showCameras" type="Button" parent="."]
-offset_left = 145.0
-offset_top = 591.0
-offset_right = 1016.0
-offset_bottom = 656.0
+offset_left = -6.0
+offset_top = 542.0
+offset_right = 1159.0
+offset_bottom = 650.0
 text = "camera"
+icon = ExtResource("3_ev6td")
+icon_alignment = 1
 
 [node name="FenwickHallway_1" parent="." instance=ExtResource("3_eighk")]
 position = Vector2(201, 354)

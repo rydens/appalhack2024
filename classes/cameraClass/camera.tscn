@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://drm17430gs16j"]
+
+[ext_resource type="Script" path="res://classes/cameraClass/Node.gd" id="1_ghlo4"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_ghlo4")

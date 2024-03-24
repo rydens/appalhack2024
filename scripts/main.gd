@@ -11,7 +11,10 @@ func _process(delta):
 	pass
 
 func new_game():
-	get_tree().change_scene_to_file("res://introScreen.tscn")
+	Global.homeworkdone = false
+	Global.incorrect = 0
+	Global.questionplace = 0
+	get_tree().change_scene_to_file("res://scenesFolder/startScreen.tscn")
 
 func game_over():
 	$GameTimer.stop()

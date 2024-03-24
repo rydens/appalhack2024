@@ -6,6 +6,7 @@
 
 [node name="CameraA" type="Node2D"]
 script = ExtResource("1_3pxlg")
+[ext_resource type="Texture2D" uid="uid://dd7oepqvjy87g" path="res://assets/cameraarrow.png" id="3_nabvt"]
 
 [node name="CameraA" type="Sprite2D" parent="."]
 position = Vector2(707.096, 331)
