@@ -1,9 +1,11 @@
-extends Node2D
+class_name Location extends Node2D
 
+@export var Occupant: Enemy
+@export var Pos: Vector2
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print("Game ready")
+	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

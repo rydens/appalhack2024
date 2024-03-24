@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dsfenq8b6squp"]
+[gd_scene load_steps=5 format=3 uid="uid://dsfenq8b6squp"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_p7v2c"]
 [ext_resource type="Texture2D" uid="uid://qw1whvsnwmro" path="res://assets/cameraLobby.jpg" id="2_qr8ti"]
 [ext_resource type="Script" path="res://scenesFolder/LobbyPlayerCamera.gd" id="3_n6dyc"]
+[ext_resource type="PackedScene" uid="uid://c2n5xc3e564ts" path="res://locations/location.tscn" id="4_id7gb"]
 
 [node name="player" type="Node2D"]
 script = ExtResource("1_p7v2c")
@@ -32,5 +33,11 @@ offset_bottom = 420.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "camera"
+
+[node name="PokiLobby_5" parent="LobbyScene" instance=ExtResource("4_id7gb")]
+position = Vector2(-547, -21)
+
+[node name="SwansonDoorL_4" parent="LobbyScene" instance=ExtResource("4_id7gb")]
+position = Vector2(-1214, 41)
 
 [connection signal="pressed" from="LobbyScene/LobbyPlayerCamera/showCameras" to="." method="_on_show_cameras_pressed"]

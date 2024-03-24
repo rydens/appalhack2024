@@ -1,0 +1,25 @@
+[gd_scene load_steps=8 format=3 uid="uid://bp8gnpvkxfm0w"]
+
+[ext_resource type="PackedScene" uid="uid://cco7q756aqe7c" path="res://scenesFolder/cameras/camera_a.tscn" id="1_pwqmf"]
+[ext_resource type="PackedScene" uid="uid://b0s3jd342ytqq" path="res://scenesFolder/cameras/camera_b.tscn" id="2_0w6yt"]
+[ext_resource type="PackedScene" uid="uid://cydavhy1s3hc0" path="res://scenesFolder/cameras/camera_c.tscn" id="3_ac5bs"]
+[ext_resource type="PackedScene" uid="uid://bceiv3bgoc2x" path="res://scenesFolder/cameras/camera_d.tscn" id="4_ctiy6"]
+[ext_resource type="PackedScene" uid="uid://cvgpgx27oqt3r" path="res://scenesFolder/cameras/camera_e.tscn" id="5_iktlg"]
+[ext_resource type="PackedScene" uid="uid://cw0wsd883aex7" path="res://scenesFolder/cameras/camera_f.tscn" id="6_wni6u"]
+[ext_resource type="PackedScene" uid="uid://ekrvkam7gp7p" path="res://scenesFolder/cameras/camera_g.tscn" id="7_ki3da"]
+
+[node name="Cameras" type="Node2D"]
+
+[node name="CameraA" parent="." instance=ExtResource("1_pwqmf")]
+
+[node name="CameraB" parent="." instance=ExtResource("2_0w6yt")]
+
+[node name="cameraC" parent="." instance=ExtResource("3_ac5bs")]
+
+[node name="CameraD" parent="." instance=ExtResource("4_ctiy6")]
+
+[node name="CameraE" parent="." instance=ExtResource("5_iktlg")]
+
+[node name="CameraF" parent="." instance=ExtResource("6_wni6u")]
+
+[node name="CameraG" parent="." instance=ExtResource("7_ki3da")]
