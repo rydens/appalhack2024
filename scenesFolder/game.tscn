@@ -23,6 +23,7 @@ script = ExtResource("1_l1kos")
 Name = "Poki"
 LocationPaths = Array[NodePath]([NodePath("Cameras/CameraC/Poki311_2"), NodePath("Cameras/CameraB/PokiHallway_1"), NodePath("Cameras/CameraB/PokiHallway_3"), NodePath("Cameras/CameraA/PokiHallway_4"), NodePath("player/LobbyScene/PokiLobby_5")])
 StartLocationPath = NodePath("Cameras/CameraC/Poki311_2")
+ChanceToMove = null
 
 [node name="SwansonEnemy" type="Node2D" parent="."]
 script = ExtResource("3_ounw8")
@@ -46,3 +47,5 @@ Name = "NULLENEMY"
 
 [node name="cameraInterface" parent="." instance=ExtResource("8_r5dhf")]
 position = Vector2(179, 522)
+
+[connection signal="PokiKill" from="PokiEnemy" to="player" method="_on_poki_enemy_poki_kill"]
