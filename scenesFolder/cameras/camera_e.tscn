@@ -1,11 +1,11 @@
 [gd_scene load_steps=4 format=3 uid="uid://cvgpgx27oqt3r"]
 
-[ext_resource type="Script" path="res://scenesFolder/cameras/camera_e.gd" id="1_qwc2o"]
+[ext_resource type="Script" path="res://scenesFolder/cameras/Camera.gd" id="1_vacch"]
 [ext_resource type="Texture2D" uid="uid://n15bfrksobgi" path="res://assets/cameraE.jpg" id="2_pf1ed"]
 [ext_resource type="PackedScene" uid="uid://c2n5xc3e564ts" path="res://locations/location.tscn" id="3_anijw"]
 
 [node name="CameraE" type="Node2D"]
-script = ExtResource("1_qwc2o")
+script = ExtResource("1_vacch")
 
 [node name="CameraE" type="Sprite2D" parent="."]
 position = Vector2(893, 326)

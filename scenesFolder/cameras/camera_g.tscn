@@ -1,10 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://ekrvkam7gp7p"]
 
-[ext_resource type="Script" path="res://scenesFolder/cameras/camera_g.gd" id="1_kk3s6"]
+[ext_resource type="Script" path="res://scenesFolder/cameras/Camera.gd" id="1_7pieu"]
 [ext_resource type="PackedScene" uid="uid://c2n5xc3e564ts" path="res://locations/location.tscn" id="2_ymt1t"]
 
 [node name="CameraG" type="Node2D"]
-script = ExtResource("1_kk3s6")
+script = ExtResource("1_7pieu")
 
 [node name="showCameras" type="Button" parent="."]
 offset_left = 145.0

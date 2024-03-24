@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=3 uid="uid://bp8gnpvkxfm0w"]
+[gd_scene load_steps=8 format=3 uid="uid://bp8gnpvkxfm0w"]
 
 [ext_resource type="PackedScene" uid="uid://cco7q756aqe7c" path="res://scenesFolder/cameras/camera_a.tscn" id="1_pwqmf"]
 [ext_resource type="PackedScene" uid="uid://b0s3jd342ytqq" path="res://scenesFolder/cameras/camera_b.tscn" id="2_0w6yt"]
 [ext_resource type="PackedScene" uid="uid://cydavhy1s3hc0" path="res://scenesFolder/cameras/camera_c.tscn" id="3_ac5bs"]
 [ext_resource type="PackedScene" uid="uid://bceiv3bgoc2x" path="res://scenesFolder/cameras/camera_d.tscn" id="4_ctiy6"]
-[ext_resource type="Script" path="res://scenesFolder/cameras/camera_c.gd" id="4_xybvl"]
 [ext_resource type="PackedScene" uid="uid://cvgpgx27oqt3r" path="res://scenesFolder/cameras/camera_e.tscn" id="5_iktlg"]
 [ext_resource type="PackedScene" uid="uid://cw0wsd883aex7" path="res://scenesFolder/cameras/camera_f.tscn" id="6_wni6u"]
 [ext_resource type="PackedScene" uid="uid://ekrvkam7gp7p" path="res://scenesFolder/cameras/camera_g.tscn" id="7_ki3da"]
@@ -25,7 +24,6 @@ position = Vector2(584, 339)
 
 [node name="CameraC" parent="." instance=ExtResource("3_ac5bs")]
 position = Vector2(68, 1437)
-script = ExtResource("4_xybvl")
 
 [node name="Camera2D" type="Camera2D" parent="CameraC"]
 position = Vector2(533, 321)
