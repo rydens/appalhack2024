@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://xpiq18sdcw3r"]
+[gd_scene load_steps=14 format=3 uid="uid://xpiq18sdcw3r"]
 
 [ext_resource type="Script" path="res://enemies/PokiEnemy.gd" id="1_l1kos"]
 [ext_resource type="Script" path="res://scripts/Game.gd" id="1_lik7u"]
@@ -9,15 +9,22 @@
 [ext_resource type="Texture2D" uid="uid://c3tt0hrpp1wxj" path="res://assets/poki.png" id="5_yjcxf"]
 [ext_resource type="PackedScene" uid="uid://dsfenq8b6squp" path="res://scenesFolder/lobbyScene.tscn" id="6_rk86f"]
 [ext_resource type="PackedScene" uid="uid://bp8gnpvkxfm0w" path="res://scenesFolder/Cameras.tscn" id="7_c4k0s"]
+[ext_resource type="Texture2D" uid="uid://bdxawmh11qjrg" path="res://assets/swanson.png" id="7_fthc8"]
 [ext_resource type="PackedScene" uid="uid://ctvvtjcw4bss1" path="res://scenesFolder/camera_interface.tscn" id="8_r5dhf"]
+[ext_resource type="Texture2D" uid="uid://c0t3h0bf87lh0" path="res://assets/fenwickjumpscare.png" id="9_3r8ou"]
+[ext_resource type="Texture2D" uid="uid://cvaq85ydoe1us" path="res://assets/norrisjumpscare.png" id="11_eivim"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_lik7u")
+metadata/_edit_horizontal_guides_ = [2342.0]
+metadata/_edit_vertical_guides_ = [600.0]
 
 [node name="player" parent="." instance=ExtResource("6_rk86f")]
 
 [node name="Cameras" parent="." instance=ExtResource("7_c4k0s")]
-position = Vector2(-1895, 935)
+position = Vector2(4, 479)
+metadata/_edit_horizontal_guides_ = [1756.0, 1759.0]
+metadata/_edit_vertical_guides_ = [593.0]
 
 [node name="PokiEnemy" type="Node2D" parent="."]
 script = ExtResource("1_l1kos")
@@ -27,8 +34,8 @@ StartLocationPath = NodePath("Cameras/CameraC/Poki311_2")
 ChanceToMove = 0.5
 
 [node name="Sprite2D" type="Sprite2D" parent="PokiEnemy"]
-position = Vector2(3261, 215)
-scale = Vector2(1.86377, 2.95833)
+position = Vector2(2942.82, 2889)
+scale = Vector2(0.23525, 0.253968)
 texture = ExtResource("5_yjcxf")
 
 [node name="SwansonEnemy" type="Node2D" parent="."]
@@ -37,22 +44,49 @@ Name = "Swanson"
 LocationPaths = Array[NodePath]([NodePath("Cameras/CameraG/SwansonOffice_1"), NodePath("Cameras/CameraF/SwansonHallway_2"), NodePath("Cameras/CameraF/SwansonHallway_3"), NodePath("player/LobbyScene/SwansonDoorL_4")])
 StartLocationPath = NodePath("Cameras/CameraG/SwansonOffice_1")
 
+[node name="Sprite2D" type="Sprite2D" parent="SwansonEnemy"]
+position = Vector2(-2155, 2456)
+texture = ExtResource("7_fthc8")
+
 [node name="FenwickEnemy" type="Node2D" parent="."]
 script = ExtResource("3_cirrp")
 Name = "Fenwick"
-LocationPaths = Array[NodePath]([NodePath("Cameras/CameraD/FenwickHallway_1"), NodePath("Cameras/CameraB/FenwickHallway_2"), NodePath("Cameras/CameraD/FenwickHallway_3"), NodePath("Cameras/CameraB/FenwickHallway_4"), NodePath("Cameras/CameraE/FenwickHallway_5"), NodePath("Cameras/CameraB/FenwickHallway_6"), NodePath("Cameras/CameraE/FenwickHallway_7"), NodePath("Cameras/CameraE/FenwickHallway_8"), NodePath("Cameras/CameraF/FenwickHallway_8_2"), NodePath("Cameras/CameraA/FenwickHallway_9"), NodePath("Cameras/CameraF/FenwickHallway_10"), NodePath("Cameras/CameraA/FenwickDoorR_11")])
+LocationPaths = Array[NodePath]([NodePath("Cameras/CameraF/FenwickHallway_10"), NodePath("Cameras/CameraE/FenwickHallway_8"), NodePath("Cameras/CameraF/FenwickHallway_8_2"), NodePath("Cameras/CameraE/FenwickHallway_7"), NodePath("Cameras/CameraE/FenwickHallway_5"), NodePath("Cameras/CameraD/FenwickHallway_3"), NodePath("Cameras/CameraD/FenwickHallway_1"), NodePath("Cameras/CameraB/FenwickHallway_4"), NodePath("Cameras/CameraB/FenwickHallway_2"), NodePath("Cameras/CameraB/FenwickHallway_6"), NodePath("Cameras/CameraA/FenwickHallway_9"), NodePath("Cameras/CameraA/FenwickDoorR_11")])
 StartLocationPath = NodePath("Cameras/CameraD/FenwickHallway_1")
+
+[node name="Sprite2D" type="Sprite2D" parent="FenwickEnemy"]
+position = Vector2(-747, 3632)
+scale = Vector2(0.43159, 0.138825)
+texture = ExtResource("9_3r8ou")
 
 [node name="NorrisEnemy" type="Node2D" parent="."]
 script = ExtResource("4_yhba5")
 Name = "Norris"
 
+[node name="Sprite2D" type="Sprite2D" parent="NorrisEnemy"]
+position = Vector2(-1730, 3627)
+scale = Vector2(0.250866, 0.135503)
+texture = ExtResource("11_eivim")
+
 [node name="NullEnemy" type="Node2D" parent="."]
 script = ExtResource("5_465va")
 Name = "NULLENEMY"
 
+[node name="Sprite2D" type="Sprite2D" parent="NullEnemy"]
+position = Vector2(-1681, 2406)
+
 [node name="cameraInterface" parent="." instance=ExtResource("8_r5dhf")]
-position = Vector2(179, 522)
+position = Vector2(1947, 355)
 
 [connection signal="PokiKill" from="PokiEnemy" to="player" method="_on_poki_enemy_poki_kill"]
 [connection signal="SwansonKill" from="SwansonEnemy" to="player" method="_on_swanson_enemy_swanson_kill"]
+[connection signal="FenwickKill" from="FenwickEnemy" to="player" method="_on_fenwick_enemy_fenwick_kill"]
+
+[editable path="Cameras"]
+[editable path="Cameras/CameraA"]
+[editable path="Cameras/CameraB"]
+[editable path="Cameras/CameraC"]
+[editable path="Cameras/CameraD"]
+[editable path="Cameras/CameraE"]
+[editable path="Cameras/CameraF"]
+[editable path="Cameras/CameraG"]

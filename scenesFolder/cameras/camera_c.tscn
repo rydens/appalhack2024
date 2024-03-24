@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cydavhy1s3hc0"]
+[gd_scene load_steps=5 format=3 uid="uid://cydavhy1s3hc0"]
 
 [ext_resource type="Script" path="res://scenesFolder/cameras/Camera.gd" id="1_dac16"]
 [ext_resource type="Texture2D" uid="uid://cu27x804m1ctm" path="res://assets/cameraC.png" id="2_c1dy4"]
@@ -8,6 +8,7 @@
 [node name="cameraC" type="Node2D"]
 position = Vector2(42, 23)
 script = ExtResource("1_dac16")
+metadata/_edit_horizontal_guides_ = [354.0]
 
 [node name="main camera" type="Sprite2D" parent="."]
 position = Vector2(534, 317)

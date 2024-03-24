@@ -14,6 +14,7 @@ func onTimeStep():
 		move()
 
 func move():
+	print("moving")
 	# if Poki is at the whiteboard, KILL
 	if CurrentLocation == Locations[-1]:
 		# KILL
@@ -23,3 +24,4 @@ func move():
 		CurrentLocationIndex += 1
 		CurrentLocation = Locations[CurrentLocationIndex]
 		Locations[CurrentLocationIndex].Occupant = self
+		

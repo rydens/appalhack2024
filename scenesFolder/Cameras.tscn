@@ -9,6 +9,8 @@
 [ext_resource type="PackedScene" uid="uid://ekrvkam7gp7p" path="res://scenesFolder/cameras/camera_g.tscn" id="7_ki3da"]
 
 [node name="Cameras" type="Node2D"]
+metadata/_edit_horizontal_guides_ = [1756.0, 1756.0]
+metadata/_edit_vertical_guides_ = [387.0]
 
 [node name="CameraA" parent="." instance=ExtResource("1_pwqmf")]
 position = Vector2(20, 8)
@@ -51,3 +53,11 @@ position = Vector2(74, 5276)
 
 [node name="Camera2D" type="Camera2D" parent="CameraG"]
 position = Vector2(596, 355)
+
+[editable path="CameraA"]
+[editable path="CameraB"]
+[editable path="CameraC"]
+[editable path="CameraD"]
+[editable path="CameraE"]
+[editable path="CameraF"]
+[editable path="CameraG"]
