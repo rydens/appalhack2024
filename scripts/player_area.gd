@@ -2,6 +2,19 @@ extends Sprite2D
 
 var scene_list = {}
 var location_list = {}
+var travels = {
+	"poki":[],
+	"Fenwick":[],
+	"Norris":[],
+	"Swanson":[]
+}
+
+var travel_positions = {
+	"poki": 0,
+	"Fenwick": 0,
+	"Norris": 0,
+	"Swanson": 0
+}
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -27,6 +40,10 @@ func _update_locations():
 			# child node scenes are responsible for setting 
 			# the bool variable to false
 			_do_nothing()
+			
+func _move_time_forward():
+	
+	pass
 			
 func _do_nothing():
 	pass
