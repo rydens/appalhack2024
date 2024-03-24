@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://dsfenq8b6squp"]
+[gd_scene load_steps=6 format=3 uid="uid://mxt3p4alh0yd"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_p7v2c"]
 [ext_resource type="Texture2D" uid="uid://qw1whvsnwmro" path="res://assets/cameraLobby.jpg" id="2_qr8ti"]
@@ -51,6 +51,14 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "camera"
 
+[node name="showHomework" type="Button" parent="LobbyScene/LobbyPlayerCamera"]
+offset_left = -415.0
+offset_top = -407.0
+offset_right = 417.0
+offset_bottom = -292.0
+text = "Homework"
+
 [connection signal="pressed" from="LobbyScene/closeDoorLeft" to="LobbyScene/closeDoorLeft" method="_on_pressed"]
 [connection signal="pressed" from="LobbyScene/closeDoorRight" to="LobbyScene/closeDoorRight" method="_on_pressed"]
 [connection signal="pressed" from="LobbyScene/LobbyPlayerCamera/showCameras" to="." method="_on_show_cameras_pressed"]
+[connection signal="pressed" from="LobbyScene/LobbyPlayerCamera/showHomework" to="." method="_on_show_homework_pressed"]

@@ -3,6 +3,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$PokiTimer.start()
 	pass # Replace with function body.
 
 
@@ -10,9 +11,8 @@ func _ready():
 func _process(delta):
 	pass
 
-func _on_show_cameras_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/camera_interface.tscn")
 
-
-func _on_show_homework_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/homework.tscn")
+func _on_poki_timer_timeout():
+	$AudioStreamPlayer2D.play()
+	$PokiTimer.stop()
+	pass # Replace with function body.
