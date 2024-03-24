@@ -15,7 +15,10 @@ func _on_pressed():
 	if(Global.leftDoorClosed == false):
 		Global.leftDoorClosed = true
 		print("left doors are now closed")
+		Global._doorpower()
+		
 	elif(Global.leftDoorClosed == true):
 		Global.leftDoorClosed = false
 		print("left doors are now open")
+	#Global._doorpower()
 

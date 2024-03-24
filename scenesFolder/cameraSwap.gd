@@ -3,7 +3,13 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	var textLable = get_node("powerPercentage")
+	textLable.text = str(Global.power) + "%"
+	
+func _process(delta):
+	var textLable = get_node("powerPercentage")
+	textLable.text = str(Global.power) + "%"
+	
 	
 func _on_camera_a_pressed():
 	get_tree().change_scene_to_file("res://scenesFolder/cameras/camera_a.tscn")
