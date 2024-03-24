@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dsfenq8b6squp"]
+[gd_scene load_steps=8 format=3 uid="uid://dsfenq8b6squp"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_p7v2c"]
 [ext_resource type="Texture2D" uid="uid://qw1whvsnwmro" path="res://assets/cameraLobby.jpg" id="2_qr8ti"]
