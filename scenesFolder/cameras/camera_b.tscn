@@ -1,9 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0s3jd342ytqq"]
+[gd_scene load_steps=3 format=3 uid="uid://b0s3jd342ytqq"]
 
 [ext_resource type="Script" path="res://scenesFolder/cameras/camera_b.gd" id="1_2qc4b"]
+[ext_resource type="Texture2D" uid="uid://blh4nckhx3qct" path="res://assets/cameraB.jpg" id="2_f87sl"]
 
 [node name="CameraB" type="Node2D"]
 script = ExtResource("1_2qc4b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(570, 341)
+scale = Vector2(0.399276, 0.399276)
+texture = ExtResource("2_f87sl")
 
 [node name="showCameras" type="Button" parent="."]
 offset_left = 145.0

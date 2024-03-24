@@ -33,4 +33,4 @@ func _on_camera_g_pressed():
 	get_tree().change_scene_to_file("res://scenesFolder/cameras/camera_g.tscn")
 
 func _on_home_pressed():
-	get_tree().change_scene_to_file("res://scenesFolder/showCamera.tscn")
+	get_tree().change_scene_to_file("res://scenesFolder/lobbyScene.tscn")

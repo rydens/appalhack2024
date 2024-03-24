@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dbcgstex4fk26"
-path="res://.godot/imported/cameraC.jpg-128750a17cf2cb11a22a914dada6870d.ctex"
+uid="uid://blh4nckhx3qct"
+path="res://.godot/imported/cameraB.jpg-2898f59fdbfe05e9d05c2ca975c59c74.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/cameraC.jpg"
-dest_files=["res://.godot/imported/cameraC.jpg-128750a17cf2cb11a22a914dada6870d.ctex"]
+source_file="res://assets/cameraB.jpg"
+dest_files=["res://.godot/imported/cameraB.jpg-2898f59fdbfe05e9d05c2ca975c59c74.ctex"]
 
 [params]
 
