@@ -82,6 +82,9 @@ func _question():
 			$HomeworkAnswers.set_item_text(1, "0")
 			$HomeworkAnswers.set_item_text(2, "4")
 			$HomeworkAnswers.set_item_text(3, "-2")
+		10:
+			$HomeworkQ.set_texture(load("res://assets/Homeworkdone.png"))
+			$HomeworkAnswers.visible = not $HomeworkAnswers.visible
 
 func _incorrect():
 	Global.incorrect += 1
@@ -185,6 +188,9 @@ func _on_homework_1_answers_item_clicked(index, at_position, mouse_button_index)
 				_incorrect()
 		9:
 			if (index == 4): #b
-				pass
+				$HomeworkQ.set_texture(load("res://assets/Homeworkdone.png"))
+				$HomeworkAnswers.visible = not $HomeworkAnswers.visible
+				Global.questionplace += 1
+				Global.homeworkdone = true
 			else:
 				_incorrect()

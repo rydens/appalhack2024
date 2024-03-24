@@ -3,6 +3,7 @@ extends Node
 var incorrect = 0
 #var questions
 var questionplace = 0
+var homeworkdone = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
